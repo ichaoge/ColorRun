@@ -1,0 +1,204 @@
+﻿@import "dialog.css";
+body,div,span {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font: 15px "幼圆";
+    color: #606566;
+}
+
+body {
+    background-color: #e8e8e8;
+}
+.main{
+    width: 1024px;
+    height: 600px;
+    margin: auto;
+    border: solid 2px #efefef;
+    margin-top: 30px;
+    background-color: #ffffff;
+}
+
+.logo{
+    width: 756px;
+    height: 121px;
+    margin: auto;
+    background-image: url("../img/main/logo.png");
+}
+
+.move_player{
+    width: 109px;
+    height: 192px;
+    position: absolute;
+    top: 180px;
+    left: 470px;
+}
+#move_player{
+    width: 109px;
+    height: 192px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    z-index: 2;
+}
+
+#score{
+    position: absolute;
+    top:20px;
+    left: 462px;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "DroidSans";
+}
+
+.move_pic{
+    width: 700px;
+    height: 100px;
+    margin: auto;
+    margin-top: 100px;
+}
+.main_button{
+    width: 308px;
+    height: 168px;
+    background-image: url("../img/button/startgame.png");
+    margin: auto;
+    margin-top:80px;
+    cursor: pointer;
+}
+.high_score{
+    width: 63px;
+    height: 54px;
+    background-image: url("../img/button/highscore.png");
+    position: absolute;
+    left: 280px;
+    top:450px;
+    cursor: pointer;
+}
+.sound_button{
+    width: 43px;
+    height: 45px;
+    background-image: url("../img/button/sound.png");
+    position: absolute;
+    left: 690px;
+    top: 455px;
+    cursor: pointer;
+}
+
+#content{
+    position:absolute;
+    width: 1024px;
+    overflow: hidden;
+}
+#index_content{
+    position:absolute;
+    width: 1024px;
+    overflow: hidden;
+}
+#myCanvasBackground{
+    color: #f997e0;
+}
+#myCanvas{
+    position: absolute;
+    top: 220px;
+    left:1024px;
+}
+#color{
+    position: absolute;
+    top: 540px;
+    width: 100%;
+    height: 60px;
+    overflow:hidden;
+}
+.color_div0{
+    -webkit-transform:translate(0,0px);
+    -webkit-animation:animations0 0.25s ;
+    /*opacity: 0.0;*/
+}
+@-webkit-keyframes animations0{
+    0%{-webkit-transform:translate(0,60);}
+    50%{-webkit-transform:translate(0,30px);}
+    100%{-webkit-transform:translate(0,0px);}
+}
+.color_div1{
+    -webkit-transform:translate(0,0px);
+    -webkit-animation:animations1 0.25s 0.25s ;
+    /*opacity: 0.0;*/
+}
+@-webkit-keyframes animations1{
+    0%{-webkit-transform:translate(0,60);}
+    50%{-webkit-transform:translate(0,30px);}
+    100%{-webkit-transform:translate(0,0px);}
+}
+.color_div2{
+    -webkit-transform:translate(0,0px);
+    -webkit-animation:animations2 0.25s 0.5s ;
+    /*opacity: 0.0;*/
+}
+@-webkit-keyframes animations2{
+    0%{-webkit-transform:translate(0,60);}
+    50%{-webkit-transform:translate(0,30px);}
+    100%{-webkit-transform:translate(0,0px);}
+}
+.color_div3{
+    -webkit-transform:translate(0,0px);
+    -webkit-animation:animations3 0.25s 0.75s ;
+    /*opacity: 0.0;*/
+}
+@-webkit-keyframes animations3{
+    0%{-webkit-transform:translate(0,60);}
+    50%{-webkit-transform:translate(0,30px);}
+    100%{-webkit-transform:translate(0,0px);}
+}
+.color_div4{
+    -webkit-transform:translate(0,0px);
+    -webkit-animation:animations4 0.25s 1s;
+    /*opacity: 0.0;*/
+}
+@-webkit-keyframes animations4{
+    0%{-webkit-transform:translate(0,60);}
+    50%{-webkit-transform:translate(0,30px);}
+    100%{-webkit-transform:translate(0,0px);}
+}
+.color_div5{
+    -webkit-transform:translate(0,0px);
+    -webkit-animation:animations5 0.25s  1.25;
+    /*opacity: 0.0;*/
+}
+@-webkit-keyframes animations5{
+    0%{-webkit-transform:translate(0,60);}
+    50%{-webkit-transform:translate(0,30px);}
+    100%{-webkit-transform:translate(0,0px);}
+}
+#game_pause{
+    background-image: url("../img/main/puse.png");
+    width: 87px;
+    height: 81px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.index_high_data{
+    position: absolute;
+    left: 230px;
+    top: 150px;
+    width: 400px;
+    height: 400px;
+    font-family: "DroidSans";
+    font-size: 25px;
+    color: #ff9d5b;
+}
+footer{
+    width: 150px;
+    font-family: "微软雅黑";
+    display: block;
+    margin: auto;
+    line-height: 50px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>颜色运行-ColorRun</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <link rel="shortcut icon" href="img/favorite.png"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script type="text/javascript" src="js/tool/import.js"></script>
+</head>
+<body>
+<div class="main">
+    <div id="index_content">
+            <div class="logo"></div>
+            <div class="move_pic">
+                <marquee direction="left" scrollDelay="25" loop="-1" behavior="alternate">
+                    <img src="img/marquee/bike.png" alt="img"/>
+                    <img src="img/marquee/light.png" alt="img"/>
+                    <img src="img/marquee/elephant.png" alt="img"/>
+                    <img src="img/marquee/bike1.png" alt="img"/>
+                    <img src="img/marquee/hill.png" alt="img"/>
+                    <img src="img/marquee/house.png" alt="img"/>
+                    <img src="img/marquee/chair.png" alt="img"/>
+                    <img src="img/marquee/tv.png" alt="img"/>
+                    <img src="img/marquee/tl.png" alt="img"/>
+                    <img src="img/marquee/house1.png" alt="img"/>
+                    <img src="img/marquee/petal.png" alt="img"/>
+                </marquee>
+            </div>
+            <div class="move_player">
+                <img src="img/main/man.gif" alt="img" width="109" height="192"/>
+            </div>
+            <div class="high_score" title="高分榜" onclick="showHighScore()"></div>
+            <div class="main_button" title="开始游戏" onclick="startGame()"></div>
+            <div class="sound_button" id="sound_button" title="关闭音效" onclick="controlSound()"></div>
+        </div>
+    </div>
+<footer>
+    朗沃版权所有&copy;2013
+</footer>
+<audio  src="mid/bg.mp3" autoplay="true" loop="loop" id="game_sound"></audio>
+</body>
+</html>

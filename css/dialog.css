@@ -1,0 +1,153 @@
+/**
+   *  封装对话框样式(高分榜,游戏暂停,游戏结束)
+   *  高分榜命名规则:dialog_high_score_xxx
+   *  游戏暂停命名规则:dialog_game_pause_xxx
+   *  游戏结束命名规则:dialog_game_over_xxx
+*/
+@font-face{
+    font-family: 'DroidSans';
+    src: url('../mid/font.TTF') format('truetype');
+}
+.dialog_high_score_main{
+    width: 1024px;
+    height: 600px;
+    position: absolute;left: 0;top: 0;
+    background-color: #000000;
+    opacity: 0.9;
+    z-index: 200;
+}
+.dialog_high_score_bottom{
+    width: 1024px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    background-color:#000000;
+    z-index: 200;
+}
+.right_button_one{
+    position: relative;
+    margin-left: 870px;
+}
+.right_button_two{
+    position: relative;
+    margin-left: 858px;
+    margin-top: 1px;
+}
+.right_button_three{
+    position: relative;
+    margin-left: 816px;
+    margin-top: 1px;
+}
+.run_man{
+    position:absolute;
+    left: 1230px;
+    top:635px;
+}
+.gameover_title{
+    position:absolute;
+    left: 135px;
+    top:5px;
+}
+
+.gameover_bg{
+    position: absolute;
+    top: 148px;
+    left: 110px;
+}
+.dialog_high_score_main span{
+    font-size: 30px;
+    font-family: 'DroidSans';
+}
+.firstspan{
+    position: absolute;
+    top: 150px;
+    left: 375px;
+    color: #444343;
+}
+.secondspan{
+    position: absolute;
+    color: #695100;
+    top: 195px;
+    left: 430px;
+}
+.threespan{
+    color: #7a5696;
+    position: absolute;
+    top: 240px;
+    left: 430px;
+}
+.fourspan{
+    position: absolute;
+    top: 285px;
+    left: 375px;
+}
+.fivespan{
+    position: absolute;
+    top: 350px;
+    left: 375px;
+    color: #ffffff;
+}
+.sixspan{
+    position: absolute;
+    top: 480px;
+    left: 230px;
+    color:#695100 ;
+}
+.sevenspan{
+    position: absolute;
+    top: 480px;
+    left: 430px;
+    color:#444343
+}
+.player{
+    width: 150px;height: 30px;
+    position: absolute;
+    left: 375px;top: 393px;
+    font-size: 20px;
+    padding-left: 7px;
+    color: #a17451;
+}
+.high_return{
+    position: absolute;
+    left: 720px;
+    top: 200px;
+    cursor: pointer;
+}
+.pause_home{
+    position: absolute;
+    left: 140px;
+    top: 200px;
+    cursor: pointer;
+}
+.game_start{
+    position: absolute;
+    left: 470px;
+    top: 250px;
+    cursor: pointer;
+}
+.game_continue{
+    position: absolute;
+    left: 800px;
+    top: 260px;
+    cursor: pointer;
+}
+.high_score_bg{
+    position: absolute;
+    left: 130px;top: 125px;
+}
+.high_score_titlt{
+     position:absolute;
+     width: 615px;height: 144px;
+     position: absolute;
+     left: 245px;
+     top:30px;
+ }
+.setDialog{
+    width: 1024px;
+    height: 600px;
+    position: absolute;left: 0;top: 0;
+    background-color: #000000;
+    z-index: 200;
+}

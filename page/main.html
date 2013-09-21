@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>颜色运行-ColorRun</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="../css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/dialog.css"/>
+    <link rel="shortcut icon" href="../img/favorite.png"/>
+    <script type="text/javascript" src="../js/sqlite.js"></script>
+    <script type="text/javascript" src="../js/tool/socket.js"></script>
+    <script type="text/javascript" src="../js/dialog.js"></script>
+</head>
+<body>        <!--onload="initSocket()"-->
+<div class='main'>
+    <div id="content">
+        <div id="score">0</div>
+        <div id="move_player">
+            <img src="../img/main/man.gif" alt="img" width="109" height="192"/>
+        </div>
+        <canvas id="myCanvasBackground" width="1024" height="600"></canvas>
+        <div id="myFather">
+            <canvas id="myCanvas" width="200" height="200"></canvas>
+        </div>
+        <div id="color"></div>
+        <div id="game_pause" title="暂停游戏" onclick="pauseGame()"></div>
+    </div>
+</div>
+<footer>
+    朗沃版权所有&copy;2013
+</footer>
+<script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript" src="../js/shape.js"></script>
+<script type="text/javascript">
+    //-----------------------------------------游戏主线程-------------------
+    //-----------------游戏初始化
+    function startGame(){
+        //时间控制器
+        gameTime=0;
+        //----游戏等级---------
+        level=0;
+        //-------------图片状态初始化---------
+        for(var k=0;k<5;k++){
+            colorState[i]=1;
+        }
+        //----------------总得分初始化--------
+        $("score").innerHTML=0;
+        //------------------清除图片总个数初始化----------
+        imgNum=-1;
+        //------------------清除颜色总个数初始化----------
+        imgColorNum=0;
+        //---------开始创建第一个图片----------
+        changeLevel();
+        allCtrl=setInterval("gameStart()",10);
+    }
+    startGame();
+
+</script>
+<audio  src="../mid/bg.mp3" autoplay="true" loop="loop" id="game_sound"></audio>
+<script type="text/javascript">
+    window.onload=function(){
+        if(localStorage.isOpenSound==undefined){
+            localStorage.isOpenSound="yes";
+        }
+        if(localStorage.isOpenSound=="yes"){
+            $("game_sound").muted=false;
+        }else{
+            $("game_sound").muted=true;
+        }
+    }
+</script>
+</body>
+</html>
