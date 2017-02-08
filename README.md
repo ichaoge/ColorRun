@@ -6,3 +6,4 @@ ColorRun
 ##运行平台:Chrome浏览器
 ##开发语言:HTML5+CSS3+Javascript
 ##开发周期:三天(8.13,8.14,8.16)
+##[演示地址](http://demo.mooban.cn/mooban/game/colorun/ "猛击试玩") 
